@@ -44,3 +44,21 @@ A versatile command-line tool for converting between different units of measurem
 git clone https://github.com/0xAr3s/unit-converter.git
 cd unit-converter
 ```
+
+2. Make the script executable (Unix/Linux/macOS):
+```bash
+chmod +x main.py
+```
+
+## 🔍 Usage
+
+```bash
+python main.py <command> [options]
+```
+
+## ⚙️ Commands
+
+- `convert`: Convert between units
+- `categories`: List all conversion categories
+- `units`: List units in a category
+- `history`: View conversion history
