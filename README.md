@@ -62,3 +62,88 @@ python main.py <command> [options]
 - `categories`: List all conversion categories
 - `units`: List units in a category
 - `history`: View conversion history
+
+## 📋 Command Options
+
+### Convert:
+```bash
+python main.py convert <value> <from_unit> <to_unit> [options]
+```
+
+Options:
+
+- `-c, --category`: Conversion category (optional, auto-detected)
+
+### List categories:
+```bash
+python main.py categories
+```
+
+### List units in a category:
+```bash
+python main.py units <category>
+```
+
+### View history:
+```bash
+python main.py history [options]
+```
+
+Options:
+
+- `-l, --limit`: Number of history items to show (default: 10)
+
+## 📝 Examples
+
+### Length conversion:
+```bash
+python main.py convert 100 cm m
+python main.py convert 5.5 feet inch
+python main.py convert 10 km mile
+```
+
+### Weight conversion:
+```bash
+python main.py convert 2.5 kg pound
+python main.py convert 150 g ounce
+python main.py convert 1 ton kg
+```
+
+### Temperature conversion:
+```bash
+python main.py convert 32 fahrenheit celsius
+python main.py convert 0 celsius kelvin
+python main.py convert 300 kelvin fahrenheit
+```
+
+### Volume conversion:
+```bash
+python main.py convert 1 gallon l
+python main.py convert 500 ml cup
+python main.py convert 2 m³ gallon
+```
+
+### Auto-detect category:
+```bash
+# The tool automatically detects the category
+python main.py convert 100 mph km/h
+python main.py convert 1024 byte MB
+```
+
+### List available categories:
+```bash
+python main.py categories
+```
+
+### List units in a category:
+```bash
+python main.py units length
+python main.py units temperature
+```
+
+### View conversion history:
+```bash
+python main.py history
+python main.py history -l 5
+```
+
