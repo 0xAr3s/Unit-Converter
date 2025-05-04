@@ -147,3 +147,15 @@ python main.py history
 python main.py history -l 5
 ```
 
+## 💡 Tips
+
+- The tool automatically detects the category when possible
+- Temperature conversions are handled specially for accuracy
+- Use decimal values for precise conversions
+- History is saved automatically for last 50 conversions
+- You can mix metric and imperial units in the same conversion
+- For data sizes, remember that 1 KB = 1024 bytes (binary)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
